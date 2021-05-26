@@ -1,5 +1,4 @@
-FROM klakegg/hugo:0.83.1-ext-alpine-onbuild AS build
-RUN apk add --no-cache bash
+FROM klakegg/hugo:0.78.2-alpine AS build
 RUN apk add -U git
 COPY . /src
 RUN make init
