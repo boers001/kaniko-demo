@@ -1,4 +1,4 @@
-FROM klakegg/hugo:alpine-onbuild AS build
+FROM klakegg/hugo:0.83.1-ext-alpine-ci AS build
 RUN apk add -U git
 COPY . /src
 RUN make init
